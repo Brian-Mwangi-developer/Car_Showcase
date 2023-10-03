@@ -17,7 +17,7 @@ export default  async function Home({searchParams}:HomeProps) {
   });
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
-
+  //!Array.isArray() returns true if allCars is not array use of ! .and false if array
   return (
     <main className="overflow-hidden">
       <Hero/>

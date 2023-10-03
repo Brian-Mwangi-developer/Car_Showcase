@@ -15,7 +15,7 @@ interface CarCardProps {
   car: CarProps;
 }
 
-const CarCard = ({ car }: CarCardProps) => {
+const CarCard = ({ car }: CarCardProps) => {//destructure the interface
   const { city_mpg, year, make, model, transmission, drive } = car;
 
   const [isOpen, setIsOpen] = useState(false);
